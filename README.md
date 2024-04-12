@@ -119,7 +119,7 @@ In this project report, all three candidate models follow the rule of randomly d
   </p>
 <h5>
 The estimated results for each candidate model are listed in the table above. It can be observed that the intercept of all three models is negative, and beta 2 is also negative in the values of model 2 and model 3. From this, it can be concluded that if statistical software or statistical code can be used, it is crucial to check the p-value of this predictor vector to examine if it is significant in predicting Y.
-  <\h5>
+  <h5>
  <br>
 
 <h3> 3.3 Examine the assumptions on error terms (residuals) <h3>
@@ -127,7 +127,7 @@ The estimated results for each candidate model are listed in the table above. It
  <br>
   <h5>
 The verification of the assumptions in Model 1 for the error term is shown in the following combined graph, it can observed that it shows violated linearity, but the q-q plot shows that it is approximately normally distributed, and the squared residuals vs fitted value graphs shows nearly homoskedasticity.
-    <\h5>
+    <h5>
 <p align="center">
 <img width="350" alt="image" src="https://github.com/XaiZhen/Ames-Housing-Data-Analysis-Modeling/assets/157572976/492a7e45-91a4-4f6c-b770-d51e686d6a44">
 <img width="340" alt="image" src="https://github.com/XaiZhen/Ames-Housing-Data-Analysis-Modeling/assets/157572976/557b7860-fac6-4fa6-bf1f-e94cb3fa92b7">
@@ -138,24 +138,26 @@ The verification of the assumptions in Model 1 for the error term is shown in th
 <h4> 3.3.2 Model 2 <h4>
 <h5>
 The verification of the assumptions in Model 2 for the residuals is displayed in the following figures. The verification of the assumptions in Model 2 for the residuals is displayed in the following figures. As similar as the assumption examination in Model 1, the residuals shows non-linearity versus fitted value, assumptions on normality and equal variance satisfied.
-  <\h5>
+  <h5>
 <p align="center">
 <img width="340" alt="image" src="https://github.com/XaiZhen/Ames-Housing-Data-Analysis-Modeling/assets/157572976/eb20ff22-4ca2-4a56-93a9-0059458fa40f">
 <img width="340" alt="image" src="https://github.com/XaiZhen/Ames-Housing-Data-Analysis-Modeling/assets/157572976/a52608ae-411b-481f-94cd-116fafeb079e">
 <img width="340" alt="image" src="https://github.com/XaiZhen/Ames-Housing-Data-Analysis-Modeling/assets/157572976/0426a773-79f7-4d7b-9dd5-1887b2341c10">
 </p>
-
+  <br>
 <h4> 3.3.3 Model 3 <h4>
+   
   <br>
   <h5>
 From the following plot of Fitted value Vs Residuals it can be noticed that a fairly linear relationship exists between x and y. From the q-q plot it can be found that the residuals are approximately normally distributed, and from fitted values Vs Square Residentials, it can be seen that the residuals have a quite homoskedasticity.
-    <h\5>
+    <h5>
+         <br>
 <p align="center">
 <img width="340" alt="image" src="https://github.com/XaiZhen/Ames-Housing-Data-Analysis-Modeling/assets/157572976/bae8ae4f-5817-40b4-95ec-dc6c495bb4b1">
 <img width="340" alt="image" src="https://github.com/XaiZhen/Ames-Housing-Data-Analysis-Modeling/assets/157572976/9050e80c-b4b5-4223-ab76-bbb817115856">
 <img width="340" alt="image" src="https://github.com/XaiZhen/Ames-Housing-Data-Analysis-Modeling/assets/157572976/72cab2c0-efa4-43cf-ad8c-b63ed0097c48">
 </p>
-
+  <br>
 
 <h3> 3.4 MSE of each Candidate Model <h3>
 <h5>
@@ -163,26 +165,32 @@ The following tables shows Mean Square Error (MSE) for each of the Candidate Mod
 <p align="center">
 <img width="391" alt="image" src="https://github.com/XaiZhen/Ames-Housing-Data-Analysis-Modeling/assets/157572976/8c162fbf-abd5-4bf8-994d-264720addcae">
 </p>
-<\h5>
+     <br>
+<h5>
 <h3> 3.5 Best Model <h3>
-The best model is Candidate Model 3 since it has the lowest MSE in contrast with other models.
+<h5>The best model is Candidate Model 3 since it has the lowest MSE in contrast with other models.<h5>
+  <br>
 
 <h3> 3.6 Complexity of the Selected Model <h3>
 <h5>
 According to Singh (2018), she argues that for models with a few parameters there will be high bias and low variance. Conversely, high variance and low bias would exist for models with a relatively large number of parameters. Of the three candidate models mentioned in this report, Model 3 is the most optimal choice compared to Model 1 and Model 2, it is not too complex or too simple and with lowest MSE.
-<\h5>
+     <br>
+<h5>
 
 <h2>4.0 Model Evaluation <h2> 
+     <br>
 <h5>
 With the candidate model 3 found to be the best model in Section 3.0, it is elected in this section and its performance is re-estimated by combining the training and validation sets to test its performance. 
 <br>
 However, in this section, the selected model is compared with two benchmark models. The first model predicts the sales price using a constant mean of the sales prices derived from the combined set of the training and validation sets. The second benchmark model uses the average price of the counterpart neighborhood category to predict the sales price of a house. The results obtained in BM1 are based on examining the sales prices in the training and validation sets, and the results obtained in BM2 are based on the test set. The chart below demonstrates the MSE calculated from the three different models, which reveals that the Selected Model has the smallest MSE and is therefore still the best model in this comparison.
+     <br>
 <p align="center">
 <img width="619" alt="image" src="https://github.com/XaiZhen/Ames-Housing-Data-Analysis-Modeling/assets/157572976/e42aefce-3321-4177-b7a9-d31449889a79">
 </p>
-<\h5>
+<h5>
 
 <h2>5.0 Conclusion</h2>
+  <br>
 In conclusion, the Candidate Model 3 has relatively desirable performance in predicting sale prices in contrast with the other two Candidate Models and two Benchmark Models. It exhibits a lower MSE in predictive capability than any of the other four models. Additionally, this project has several limitations and could be improve in the future work. For instance, Model 3 is the one that has most predictor vectors in this project, however, in the actual data set of Ames city house prices, there are 82 variables. If it is necessary to make a superior model for predicting house prices, it is advisable to consider all the features that can be put into the model.
 
 
